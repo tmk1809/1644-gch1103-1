@@ -1,6 +1,6 @@
 const http = require ('http')
 const fs = require ('fs')
-const port = 3000
+const port = process.env.PORT || 3001
 const server = http.createServer((req, res) => {
    if (req.url === '/') {
       fs.readFile("home.html", (err, data) => {
@@ -58,6 +58,4 @@ const server = http.createServer((req, res) => {
       })
    }
 })
-server.listen(port, () => {
-   console.log ("Server is running at http://localhost:" + port)
-})
+server.listen(port)
