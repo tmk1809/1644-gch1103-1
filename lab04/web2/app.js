@@ -45,4 +45,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+//cấu hình port để có thể deploy lên Render
+app.listen(process.env.PORT || 3001);
+
 module.exports = app;
