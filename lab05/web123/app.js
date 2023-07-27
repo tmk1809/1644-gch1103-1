@@ -12,10 +12,10 @@ var app = express();
 //1. khai báo thư viện mongoose (để kết nối database)
 var mongoose = require('mongoose');
 //2. khai báo URI liên kết đến database
-var uri_local = "mongodb://localhost:27017";
-var uri_atlas = "mongodb+srv://longndt:lMb0m1z4fzxaRl72@cluster0.fyttswz.mongodb.net/";
+var local = "mongodb://localhost:27017";
+var atlas = "mongodb+srv://longndt:lMb0m1z4fzxaRl72@cluster0.fyttswz.mongodb.net/";
 //3. kiểm tra kết nối đến database
-mongoose.connect(uri_atlas)
+mongoose.connect(atlas)
 .then(() => console.log ("connect to db succeed !"))
 .catch((err) => console.log(err));
 //.catch((err) => console.log("connect to db failed !"));
