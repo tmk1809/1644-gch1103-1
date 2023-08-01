@@ -5,8 +5,10 @@ var BookSchema = mongoose.Schema({
    title: String,
    author: String,
    date: Date,
+   image: String,
    price: Number,
-   quantity: Number
+   quantity: Number,
+   video: String
 });
 
 //note: khai báo tên của collection (table) ở đây. VD: "book"
