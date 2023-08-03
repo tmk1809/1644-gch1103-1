@@ -1,7 +1,9 @@
 var mongoose = require('mongoose');
 
+//schema: khai báo, định nghĩa cấu trúc của bảng (tên các cột & kiểu dữ liệu tương ứng)
 var MobileSchema = mongoose.Schema(
    {
+      //bắt buộc phải gõ đúng tên của cột ở trong DB
       brandName  : String,
       phoneModel : String,
       quantity   : Number,
