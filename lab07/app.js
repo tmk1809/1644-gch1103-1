@@ -6,6 +6,10 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+//4A. tạo router cho từng model
+var mobileRouter = require ('./routes/mobile');
+var laptopRouter = require ('./routes/laptop');
+var studentRouter = require ('./routes/student');
 
 var app = express();
 
@@ -33,6 +37,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+//4B. set url cho từng router
+app.use('/mobile', mobileRouter);
+app.use('/laptop', laptopRouter);
+app.use('/student', studentRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
