@@ -13,6 +13,11 @@ var studentRouter = require ('./routes/student');
 
 var app = express();
 
+//5. cấu hình dateFormat để format ngày tháng
+var hbs = require('hbs');
+hbs.registerHelper('dateFormat', require('handlebars-dateformat')); 
+
+
 //1. cấu hình body-parser (lấy input data từ form)
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended : false}));
