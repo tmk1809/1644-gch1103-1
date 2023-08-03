@@ -1,0 +1,15 @@
+<h1>Mobile List</h1>
+
+{{#each mobiles }}
+<ul>
+   <li>Thương hiệu: {{ brandName }}</li>
+   <li>Tên model: {{ phoneModel }}</li>
+   <li>Giá cả: ${{ price }} </li>
+   <li>Ngày sản xuất : {{ date }}</li>
+   <li>Số lượng : {{ quantity }}</li>
+   <li>Best seller : {{ bestSeller }}</li>
+   <li>Ảnh : 
+      <img src="{{ image }}" width="100" height="100">
+   </li>
+</ul>
+{{/each}}

@@ -17,5 +17,5 @@ var MobileSchema = mongoose.Schema(
 /* 'mobile' là tên của bảng (collection) => bắt buộc phải gõ đúng
    'dien thoai' là description cho bảng => có thể gõ giống hoặc khác tên bảng */
 
-var MobileModel = mongoose.model('dien thoai', MobileSchema, 'mobile');
+const MobileModel = mongoose.model('dien thoai', MobileSchema, 'mobile');
 module.exports = MobileModel;
