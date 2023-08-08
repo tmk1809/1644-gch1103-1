@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-//4A. tạo router cho từng modell
+//4A. tạo router cho từng model
 var mobileRouter = require ('./routes/mobile');
 var laptopRouter = require ('./routes/laptop');
 var studentRouter = require ('./routes/student');
